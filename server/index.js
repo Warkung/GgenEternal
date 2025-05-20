@@ -4,7 +4,6 @@ const connectDB = require("./config/connectDB");
 const app = express();
 require("dotenv").config();
 app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(require("cors")());
 app.use(require("morgan")("dev"));
 

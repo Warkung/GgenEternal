@@ -4,7 +4,7 @@ const unitSchema = new mongoose.Schema({
   unit_name: String,
   unit_code: String,
   unit_type: String,
-  status: {
+  unit_status: {
     cp: Number,
     hp: Number,
     en: Number,
@@ -26,7 +26,7 @@ const unitSchema = new mongoose.Schema({
     series: [String],
     mechanisms: String,
   },
-  weapons: [
+  unit_weapons: [
     {
       weapon_name: String,
       weapon_type: String,
@@ -39,7 +39,7 @@ const unitSchema = new mongoose.Schema({
       usage_restrictions: [String],
     },
   ],
-  abilities_mods: {
+  unit_abilities_mods: {
     abilities: [
       {
         abilities_name: String,
