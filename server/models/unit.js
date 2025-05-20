@@ -4,6 +4,7 @@ const unitSchema = new mongoose.Schema({
   unit_name: String,
   unit_code: String,
   unit_type: String,
+  unit_image: String,
   unit_status: {
     cp: Number,
     hp: Number,
